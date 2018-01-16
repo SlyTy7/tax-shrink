@@ -66,8 +66,9 @@ a {
 }
 
 .btn-ghost:hover {
-  background-color: #fff;
-  color: #199EB8;
+  border-color: gold;
+  background-color: gold;
+  color: #ffffff;
 }
 
 section {
@@ -771,68 +772,34 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #199EB8;
 }
 
-#contact .info i {
+#contact .contact-item {
+  padding: 5px;
+}
+
+/* #contact .info {
+  padding: 20px 0;
+} */
+
+#contact .contact-item i {
+  color: #199EB8;
+}
+
+/* #contact .info i {
   font-size: 32px;
   color: #199EB8;
   float: left;
-}
+} */
 
-#contact .info p {
-  padding: 0 0 10px 50px;
+#contact .contact-item p {
   line-height: 24px;
 }
 
-#contact .form #sendmessage {
-  color: #199EB8;
-  border: 1px solid #199EB8;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
+#contact #map {
+  height: 450px;
+  width: 100%;
 }
 
-#contact .form #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
 
-#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
-  display: block;
-}
-
-#contact .form .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-#contact .form input, #contact .form textarea {
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-#contact .form button[type="submit"] {
-  background: #199EB8;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-}
-
-#contact .form button[type="submit"]:hover {
-  background: #23c2e1;
-}
 
 /* ==================================================
   Footer Styling

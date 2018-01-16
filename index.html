@@ -99,7 +99,15 @@
           About Varveris &amp; Associates
       </h2>
 
-      <p>
+      <p class="text-justify">
+        Varveris &amp; Associates assists individual clients with tax minimization, estate planning, stock option planning and cash flow management.  Our clients come to us to ensure they pay no more tax than the minimum required and maximize the benefit of their tax deductions. 
+      </p>
+      <br>
+      <p class="text-justify">
+        We represent clients in tax audits and help them resolve other tax disputes on a favorable basis.  We also help clients analyze investments, negotiate settlements or payment plans for past due liabilities, and file past due tax returns.
+      </p>
+      <br>
+      <p class="text-justify">
         Varveris &amp; Associates was founded by Nicholas G. Varveris in August of 1988. Nick is a certified public accountant with over 30 years of experience. His diverse experience includes working with public and private companies in a variety of industries. Varveris &amp; Associates has worked with hardware and software development companies, manufacturers and wholesale distribution companies as well as retail business and service companies.
       </p>
 
@@ -217,16 +225,16 @@
       <div class="row">
         <div class="col-lg-9 col-sm-12 text-lg-left text-center">
           <h2>
-              Call to Action Section
-            </h2>
+              Call Now For A Free Consultation!
+          </h2>
 
           <p>
-            Lorem ipsum dolor sit amet, nec ad nisl mandamus imperdiet, ut corpora cotidieque cum. Et brute iracundia his, est eu idque dictas gubergren
+            We are dedicated to ensuring that you pay no more tax than the minimum required and maximize the benefit of your tax deductions.
           </p>
         </div>
 
         <div class="col-lg-3 col-sm-12 text-lg-right text-center">
-          <a class="btn btn-ghost" href="#">Buy This Theme</a>
+          <a class="btn btn-ghost" href="#"><i class="fa fa-phone"></i> +1 (650) 428-1120</a>
         </div>
       </div>
     </div>
@@ -329,8 +337,16 @@
         </div>
       </div>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-4">
+      <div class="row justify-content-center align-items-center wrap">
+        
+        <!-- Google Map -->
+        <div class="col-12 col-md-8">
+          <div id="map"></div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-12 col-md-4">
+          <!--
           <div class="info">
             <div>
               <i class="fa fa-map-marker"></i>
@@ -339,7 +355,7 @@
 
             <div>
               <i class="fa fa-envelope"></i>
-              <p>Nickvcpa@taxshrink.com</p>
+              <p>NickVCPA@taxshrink.com</p>
             </div>
 
             <div>
@@ -353,34 +369,45 @@
             </div>
 
           </div>
-        </div>
-
-        <div class="col-lg-5 col-md-8">
-          <div class="form">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+          -->
+          <!-- Address -->
+          <div class="row contact-item">
+            <div class="offset-1 col-2 offset-md-0 text-center">
+              <i class="fa fa-map-marker fa-2x"></i>
+            </div>
+            <div class="col-8">
+              <p>4984 El Camino Real, Ste. 220<br>Los Altos Ca, 94022</p>
+            </div>
           </div>
-        </div>
+          <!-- Email -->
+          <div class="row contact-item">
+            <div class="offset-1 col-2 offset-md-0 text-center">
+              <i class="fa fa-envelope fa-2x"></i>
+            </div>
+            <div class="col-8">
+              <p>NickVCPA@taxshrink.com</p>
+            </div>
+          </div>
+          <!-- Phone Number -->
+          <div class="row contact-item">
+            <div class="offset-1 col-2 offset-md-0 text-center">
+              <i class="fa fa-phone fa-2x"></i>
+            </div>
+            <div class="col-8">
+              <p><a href="tel:16504281120">+1 (650) 428-1120</a></p>
+            </div>
+          </div>
+          <!-- Fax Number -->
+          <div class="row contact-item">
+            <div class="offset-1 col-2 offset-md-0 text-center">
+              <i class="fa fa-fax fa-2x"></i>
+            </div>
+            <div class="col-8">
+              <p><a href="tel:16504281140">+1 (650) 428-1140</a></p>
+            </div>
+          </div>
 
+        </div>
       </div>
     </div>
   </section>
@@ -405,7 +432,6 @@
   <!-- /Footer -->
   <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
 
-
   <!-- Required JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
@@ -421,10 +447,25 @@
   <script src="lib/parallax/parallax.js"></script>
   <script src="lib/lockfixed/lockfixed.min.js"></script>
 
+  <!-- Google Maps API -->
+  <script>
+    function initMap() {
+      var uluru = {lat: 37.397122, lng: -122.106201};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMdWt9swK0yvgbOwwAQuz6_5_pJWRTSpU&callback=initMap">
+  </script>
+
   <!-- Template Specisifc Custom Javascript File -->
   <script src="js/custom.js"></script>
-
-  <script src="contactform/contactform.js"></script>
 
 </body>
 </html>
