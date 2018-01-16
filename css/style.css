@@ -773,7 +773,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-item {
-  padding: 5px;
+  padding-top: 10px;
 }
 
 /* #contact .info {
@@ -795,7 +795,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact #map {
-  height: 450px;
+  height: 400px;
   width: 100%;
 }
 
