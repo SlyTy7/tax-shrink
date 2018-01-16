@@ -737,7 +737,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .team .card-title-wrap {
-  padding: 15px 25px;
+  text-align: center;
+  padding: 10px 5px;
   position: relative;
   z-index: 9;
   background-color: #fff;
@@ -781,7 +782,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-item p {
-  line-height: 24px;
+  line-height: 20px;
+  margin-bottom: 0;
+  font-size: 16px;
 }
 
 #contact .contact-item p a {
@@ -854,12 +857,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #199EB8;
 }
 
-.site-footer .credits {
+.site-footer .copyright-text {
   color: #ddd;
-}
-
-.site-footer .credits a {
-  color: #199EB8;
+  line-height: 18px;
 }
 
 .site-footer a.footer-link {
@@ -869,6 +869,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .site-footer a.footer-link:hover {
   color: gold;
 }
+
+
 
 /* ==================================================
   Responsive Styling
