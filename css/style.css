@@ -150,6 +150,10 @@ a:hover {
   opacity: .75;
 }
 
+.hero-btn {
+  padding: 5px 25px;
+}
+
 .tagline {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 26px;
